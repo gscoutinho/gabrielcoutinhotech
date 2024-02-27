@@ -1,0 +1,48 @@
+{
+    "data_page": {
+        "resume": {
+            "photo": "/resume.png",
+            "author_name": "Gabriel Coutinho",
+            "author_role": "SCADA & Software Engineer",
+            "interested_fields": [
+                "Renewable Energies",
+                "SCADA Systems",
+                "Software Engineering",
+                "Data Science"
+            ],
+            "description": "Expertise in renewable energy projects and industrial automation systems. With intensive knowledge in high-performance SCADA systems, software development and project management, I've led projects from inception to deployment, specializing in wind, solar, and hybrid energy plants. For now, I'm focusing in Software Development and sharing knowledge with my network."
+        },
+
+        "about":
+        {
+            "linkedin_text":"🔌 Passionate about designing, developing, and managing cutting-edge SCADA and PIMS systems in high-performance environments, with a focus on industrial networks, protocols, and power systems. Proficient in a variety of software and platforms, including Elipse Software, SICAM PAS, WinCC, and GE Cimplicity.\n🌐 Skilled in the intricacies of industrial networks and protocols, from Fieldbus and serial networks to IEC 61850 and Modbus TCP/IP. Experienced in designing, programming, and managing PLC, RTUs, and logic devices projects from leading vendors like ABB, SEL, Siemens, and Rockwell.\n📊 Proficient in leveraging SQL Server for industrial and substation plants, creating automated reports using SCADA and Python. Adept at designing and managing industrial and substations digital systems, specializing in equipment specification, SCADA specification and development, network architecture, redundancy protocols, VLANs, and network analysis.\n⚙️ Demonstrated expertise in power and energy monitoring systems, including projects with Schneider ION8650. Proven track record of successful technical negotiations with regulatory agencies, ensuring compliance and optimal project outcomes.\n🏭 Accomplished in overseeing the end-to-end process of substation and power plant projects, from design and specification to implementation and commissioning. Strong background in control and automation systems, with seamless integration with electrical and civil projects."
+        }
+    },
+    "NAV_ITENS": [
+        {
+            "label": "Home",
+            "description": "Home",
+            "href": "#home",
+            "icon": ""
+    
+        },
+        {
+            "label": "About me",
+            "description": "About me",
+            "href": "#about",
+            "icon": ""
+        },
+        {
+            "label": "Feed",
+            "description": "Feed for blog",
+            "href": "#feed",
+            "icon": ""
+        },
+        {
+            "label": "Portfolio",
+            "description": "Portfolio for projects",
+            "href": "#portfolio",
+            "icon": ""
+        }        
+    ]
+}
