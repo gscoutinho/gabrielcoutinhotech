@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gabriel Coutinho Tech
 
-## Getting Started
+Este é o repositório do meu site profissional, onde compartilho artigos, mantenho meu currículo e publico meus projetos. O objetivo deste projeto é fornecer uma template fácil e rápida de usar para quem deseja criar um site profissional sem complicações.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Artigos:** Publique artigos sobre tecnologia, carreira e outros tópicos relevantes.
+- **Currículo:** Mantenha seu currículo atualizado e acessível para potenciais empregadores.
+- **Projetos:** Compartilhe seus projetos pessoais e profissionais com o mundo.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Dependências
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Dependências de Produção
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Framer Motion](https://www.framer.com/motion/): Biblioteca para animações fluidas em React.
+- [Next.js](https://nextjs.org/): Framework React para produção com renderização no servidor e geração de páginas estáticas.
+- [React](https://reactjs.org/): Biblioteca JavaScript para construção de interfaces de usuário.
+- [React DOM](https://reactjs.org/docs/react-dom.html): Pacote que fornece métodos específicos do DOM para o React.
+- [React Icons](https://react-icons.github.io/react-icons/): Biblioteca de ícones para React.
 
-## Learn More
+### Dependências de Desenvolvimento
 
-To learn more about Next.js, take a look at the following resources:
+- [@types/node](https://www.npmjs.com/package/@types/node): Tipos TypeScript para Node.js.
+- [@types/react](https://www.npmjs.com/package/@types/react): Tipos TypeScript para React.
+- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): Tipos TypeScript para React DOM.
+- [Autoprefixer](https://autoprefixer.github.io/): Plugin PostCSS para adicionar prefixos de navegador automaticamente.
+- [ESLint](https://eslint.org/): Ferramenta de análise estática para identificar problemas no código JavaScript.
+- [ESLint Config Next](https://github.com/vercel/next.js/tree/canary/packages/eslint-config-next): Configuração ESLint específica para projetos Next.js.
+- [PostCSS](https://postcss.org/): Ferramenta para transformar estilos com JavaScript.
+- [Tailwind CSS](https://tailwindcss.com/): Estrutura CSS utilitária de baixo nível para criar designs personalizados rapidamente.
+- [TypeScript](https://www.typescriptlang.org/): Linguagem de programação que adiciona tipagem estática ao JavaScript.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Como usar
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone este repositório: `git clone https://github.com/gscoutinho/gabrielcoutinhotech.git`.
+2. Instale as dependências: `npm install`.
+3. Execute o projeto localmente: `npm run dev`.
+4. Personalize o conteúdo conforme necessário.
 
-## Deploy on Vercel
+## Contribuição
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Se você quiser contribuir, sinta-se à vontade para abrir um pull request ou reportar problemas na seção de Issues.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
