@@ -1,10 +1,10 @@
 import Home from "./Home";
 import SectionDivider from "@/components/SectionDivider"
 import Aboutme from "./Aboutme";
-import Feed from "./Feed";
 import Portfolio from "./Portfolio";
 
 import db_info from "@/database/info.json" // info for the website
+import ContactMe from "./contactme";
 
 export default function Page() {
   return (
@@ -15,7 +15,7 @@ export default function Page() {
       <SectionDivider />
       <Portfolio />
       <SectionDivider />
-      <Feed />
+      <ContactMe />
     </main>
   );
 }

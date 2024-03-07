@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from '@/components/Section'
+import SectionTitle from '@/components/SectionTitle'
 
 
 export default function Aboutme({ children }: any) {
@@ -9,7 +10,7 @@ export default function Aboutme({ children }: any) {
     <>
       <Section SEC_ID='about' initial_animation={false}>
         <div className='w-full flex-col content-start text-center'>
-          <h2 className='text-sky-950 text-3xl m-5 mb-20'>About me</h2>
+          <SectionTitle>About me</SectionTitle>
           <div>
             {
               paragraphs.map((item : any) => {
