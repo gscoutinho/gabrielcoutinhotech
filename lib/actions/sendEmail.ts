@@ -1,4 +1,4 @@
-'use server'
+"use server"
 
 import React from "react";
 import { Resend } from "resend";
@@ -9,9 +9,9 @@ import ContactForm from "@/lib/email/contactform";
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export const sendEmail = async (formData: any) => {
-    const senderEmail = formData.get('senderEmail')
-    const message = formData.get('message')
-    const email_receiver = 'eng.gabrielcoutinho@outlook.com.br'
+    const senderEmail = formData.get("senderEmail")
+    const message = formData.get("message")
+    const email_receiver = "eng.gabrielcoutinho@outlook.com.br"
 
     if (!validateString(senderEmail, 500)){
         return {
