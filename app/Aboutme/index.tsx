@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import Section from '@/components/Section'
 
-export default function Aboutme({ children }) {
+
+
+
+export default function Aboutme({ children } : any) {
   const paragraphs = children.linkedin_text.split("\n");
 
   return (
