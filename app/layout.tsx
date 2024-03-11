@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={`p-2 flex flex-col items-center ${inter.className}`}>
+      <body className={`p-2 flex flex-col items-center ${inter.className} `}>
         <ActiveSectionContextProvider>
           <NavBar>{db_info.NAV_ITENS}</NavBar>
           {children}
