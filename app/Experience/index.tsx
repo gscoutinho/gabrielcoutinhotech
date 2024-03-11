@@ -1,4 +1,3 @@
-import SectionTitle from '@/components/SectionTitle'
 import Section from '@/components/Section'
 import React from 'react'
 import TimeLine from '@/components/TimeLine'
@@ -10,7 +9,7 @@ function Experience() {
     <>
       <Section SEC_ID='experience' initial_animation={true}>
         <div className='flex flex-col w-full text-center flex-start'>
-          <SectionTitle>Experience</SectionTitle>
+          <h2>Experience</h2>
 
           <TimeLine>{experiencesData}</TimeLine>
         </div>

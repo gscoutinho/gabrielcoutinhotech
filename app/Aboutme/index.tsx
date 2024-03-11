@@ -1,6 +1,5 @@
 import React from 'react'
 import Section from '@/components/Section'
-import SectionTitle from '@/components/SectionTitle'
 
 export default function Aboutme({ children }) {
   const paragraphs = children.linkedin_text.split("\n");
@@ -9,7 +8,7 @@ export default function Aboutme({ children }) {
     <>
       <Section SEC_ID='about' initial_animation={true}>
         <div className='w-full flex-col content-start text-center'>
-          <SectionTitle>About me</SectionTitle>
+          <h2>About me</h2>
           <div>
             {
               paragraphs.map((item : any) => {

@@ -1,7 +1,6 @@
 'use client'
 
 import Section from '@/components/Section'
-import SectionTitle from '@/components/SectionTitle'
 import { FaPaperPlane } from 'react-icons/fa'
 import React from 'react'
 import { useFormStatus } from 'react-dom'
@@ -17,7 +16,7 @@ function ContactMe({ children }: any) {
         <>
             <Section SEC_ID='contactme' initial_animation={true}>
                 <div className=' w-full flex flex-col content-start text-center'>
-                    <SectionTitle>Contact me</SectionTitle>
+                    <h2>Contact me</h2>
                     <div className='flex flex-col'>
                         <h3 className='mb-5'>Send me a message!</h3>
 
