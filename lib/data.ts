@@ -34,7 +34,7 @@ export const experiencesData = [
       description:
         "Graduation focused in Industrial automation and SCADA systems. My thesis was based in adaptative control theory.",
       date: "2014 - 2018",
-      entryType: 'study'
+      entryType: "study"
     },
     {
       title: "SCADA Lead Developer",
@@ -42,22 +42,22 @@ export const experiencesData = [
       description:
         "Development of High Performance SCADA systems based in Elipse Software. Applications for Utilities, mining and automotive.",
       date: "2018 - 2019",
-      entryType: 'work'
+      entryType: "work"
     },
     {
       title: "Engineer Consultant",
-      location: "Campinas, SP - Brazil",
+      location: "São Paulo, SP - Brazil",
       description:
         "Design, develop and deploy automation and control solutions for utilities: hydro, wind, solar and hybrid plants.",
       date: "2019 - 2023",
-      entryType: 'work'
+      entryType: "work"
     },
     {
       title: "SCADA Project Engineer",
-      location: "Campinas, SP - Brazil",
+      location: "São Paulo, SP - Brazil",
       description:
         "Design, specify and manage SCADA and control solution for wind power plants.",
       date: "2023 - now",
-      entryType: 'work'
+      entryType: "work"
     }
   ] as const;
