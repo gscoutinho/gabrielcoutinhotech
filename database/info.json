@@ -38,9 +38,9 @@
         },
         
         {
-            "label": "Portfolio",
-            "description": "Portfolio for projects",
-            "href": "#portfolio",
+            "label": "Experience",
+            "description": "My professional Experience",
+            "href": "#experience",
             "icon": ""
         },
         {
