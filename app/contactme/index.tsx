@@ -13,7 +13,7 @@ const {pending} = useFormStatus();
 
     return (
         <>
-            <Section SEC_ID='contactme' initial_animation={false}>
+            <Section SEC_ID='contactme' initial_animation={true}>
                 <div className=' w-full flex flex-col content-start text-center'>
                     <SectionTitle>Contact me</SectionTitle>
                     <div className='flex flex-col'>

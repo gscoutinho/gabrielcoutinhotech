@@ -1,7 +1,7 @@
 import Home from "./Home";
 import SectionDivider from "@/components/SectionDivider"
 import Aboutme from "./Aboutme";
-import Portfolio from "./Portfolio";
+import Experience from "./Experience";
 
 import db_info from "@/database/info.json" // info for the website
 import ContactMe from "./contactme";
@@ -13,7 +13,7 @@ export default function Page() {
       <SectionDivider />
       <Aboutme>{db_info.data_page.about}</Aboutme>
       <SectionDivider />
-      <Portfolio />
+      <Experience />
       <SectionDivider />
       <ContactMe />
     </main>
