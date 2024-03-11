@@ -1,7 +1,7 @@
 {
     "data_page": {
         "resume": {
-            "photo": "/resume.png",
+            "photo": "https://github.com/gscoutinho.png",
             "author_name": "Gabriel Coutinho",
             "author_role": "SCADA & Software Engineer",
             "interested_fields": [
