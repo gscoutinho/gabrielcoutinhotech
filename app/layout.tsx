@@ -4,7 +4,7 @@ import "./globals.css";
 import db_info from "@/database/info.json" // info for the website
 import NavBar from "@/components/NavBar"
 import ActiveSectionContextProvider from "@/context/active-section-context";
-
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +24,11 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           <NavBar>{db_info.NAV_ITENS}</NavBar>
           {children}
+
+          <Toaster 
+          position="bottom-right"
+          reverseOrder={false}
+          />
         </ActiveSectionContextProvider>
       </body>
     </html>
