@@ -8,7 +8,7 @@ export const validateString = (
     return true;
 }
 
-export const getErrorMessage = (error: unkonwn): string => {
+export const getErrorMessage = (error: any): string => {
     let message: string;
 
     if (error instanceof Error) {
