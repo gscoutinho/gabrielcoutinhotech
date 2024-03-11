@@ -2,7 +2,7 @@ import React from 'react'
 import Section from '@/components/Section'
 import SectionTitle from '@/components/SectionTitle'
 
-export default function Aboutme({ children }: any) {
+export default function Aboutme({ children }) {
   const paragraphs = children.linkedin_text.split("\n");
 
   return (
