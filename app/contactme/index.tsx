@@ -20,7 +20,7 @@ function ContactMe({ children }: any) {
                     <div className='flex flex-col'>
                         <h3 className='mb-5'>Send me a message!</h3>
 
-                        <form className='my-3 flex flex-col items-center'
+                        <form className='my-3 flex flex-col items-center p-6'
 
                             action={async (formData) => {
                                 const { data, error } = await sendEmail(formData)
@@ -34,17 +34,17 @@ function ContactMe({ children }: any) {
 
                                 toast.success("Email sent successfuly!")
                             }}>
-                            <input type='email' className='h-12 px-4 my-2 w-3/5 border-solid rounded-lg border-2 border-neutral-100' placeholder='Your email'
+                            <input type='email' className='h-12 px-4 my-2 md:w-4/5 w-full border-solid rounded-lg border-2 border-neutral-100' placeholder='Your email'
                                 required
                                 name='senderEmail'
                                 maxLength={500}
                             />
-                            <textarea className='py-4 px-2 my-2 w-3/5 border-solid rounded-lg border-2 border-neutral-100' placeholder='Your message'
+                            <textarea className='py-4 px-2 my-2 md:w-4/5 w-full border-solid rounded-lg border-2 border-neutral-100' placeholder='Your message'
                                 name='message'
                                 maxLength={2500}
                                 required
                             />
-                            <div className='w-3/5 flex flex-col'>
+                            <div className='md:w-4/5 w-full flex flex-col mt-2'>
                                 <button type='submit' className='my-2 p-2 px-6 bg-sky-950 text-neutral-50 rounded-full self-end flex gap-4 items-center transition-all focus:scale-110 hover:scale-110 hover:bg-sky-400'
                                     disabled={pending}
                                 >{pending

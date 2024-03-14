@@ -16,7 +16,7 @@ export default function Aboutme({ children } : any) {
             {
               paragraphs.map((item : any) => {
                 return (
-                  <p className='text-justify text-lg mb-4' key={item}>{item}</p>
+                  <p className='text-justify text-lg mb-16' key={item}>{item}</p>
 
                 )
               })
