@@ -8,7 +8,7 @@ import ContactMe from "./contactme";
 
 export default function Page() {
   return (
-    <main className="mt-20 w-3/5 flex flex-col items-center bg-white shadow-md p-5">
+    <main className="mt-4 w-full lg:w-4/6 flex flex-col items-center bg-neutral-50 shadow-md p-10">
       <Home>{db_info.data_page.resume}</Home>
       <SectionDivider />
       <Aboutme>{db_info.data_page.about}</Aboutme>

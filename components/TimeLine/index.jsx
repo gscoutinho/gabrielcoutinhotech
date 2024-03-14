@@ -23,7 +23,7 @@ function End() {
 
 }
 
-function TimeLine({children}) {
+function TimeLine({ children }) {
     return (
 
         <div className='w-full h-full relative'>
@@ -56,7 +56,7 @@ function EntryBlock({ entryTitle, location, description, arrowside, date, entryT
 
     const montionBlock = (type, arrowside) => {
 
-        if (type === 'card'){
+        if (type === 'card') {
             return {
                 initial: {
                     y: "0%",
@@ -71,8 +71,8 @@ function EntryBlock({ entryTitle, location, description, arrowside, date, entryT
                 duration: {
                     duration: 0.75
                 }
-            }    
-        } else if (type === 'date'){
+            }
+        } else if (type === 'date') {
             return {
                 initial: {
                     y: "0%",
@@ -92,21 +92,22 @@ function EntryBlock({ entryTitle, location, description, arrowside, date, entryT
     }
 
     return (
-        <div className={`flex ${arrowside === 'right' ? 'flex-row' : 'flex-row-reverse'} w-full justify-between items-center mt-16 mb-48 group`}
+        <div className={`flex ${arrowside === 'right' ? 'md:flex-row flex-col-reverse' : 'md:flex-row-reverse flex-col-reverse'} w-full justify-between items-center mt-16 mb-48 group`}
 
 
         >
-            <motion.div className='bg-neutral-100 w-2/5 flex flex-col px-4 relative transition-all duration-250
-            group-hover:bg-sky-400/75 group-hover:rounded-lg group-hover:shadow-4xl'
+            <motion.div className='bg-neutral-100 w-4/5 md:w-2/5 flex flex-col px-4 relative transition-all duration-250  shadow-lg
+            group-hover:bg-sky-400/75 group-hover:rounded-lg group-hover:shadow-4xl md:mt-0 mt-6'
                 initial={montionBlock('card', arrowside).initial}
                 animate={montionBlock('card', arrowside).animate}
                 transition={montionBlock('card', arrowside).duration}
             >
-                <h3 className='font-bold text-left my-4'>{entryTitle}</h3>
-                <p className='text-left mb-4 font-light'>{location}</p>
-                <p className='text-left mb-4 font-light'>{description}</p>
-
-                <div className={`absolute bottom-1/2   z-[999] ${arrowside === 'right' ? '-right-3' : '-left-3'}`}>
+                
+                    <h3 className='font-bold text-left my-4'>{entryTitle}</h3>
+                    <p className='text-left mb-4 font-light'>{location}</p>
+                    <p className='text-left mb-4 font-light'>{description}</p>
+                
+                <div className={`md:block hidden absolute bottom-1/2   z-[999] ${arrowside === 'right' ? '-right-3' : '-left-3'}`}>
                     {
 
                         arrowside === 'right'
@@ -128,9 +129,9 @@ function EntryBlock({ entryTitle, location, description, arrowside, date, entryT
 
             </div>
             <motion.p className={`${arrowside === 'right' ? 'text-left' : 'text-right'} w-2/5 font-extralight group-hover:font-normal duration-500 group-hover:scale-110`}
-            initial={montionBlock('date', arrowside).initial}
-            animate={montionBlock('date', arrowside).animate}
-            duration={montionBlock('date', arrowside).duration}
+                initial={montionBlock('date', arrowside).initial}
+                animate={montionBlock('date', arrowside).animate}
+                duration={montionBlock('date', arrowside).duration}
             >{date}</motion.p>
         </div>
     )
