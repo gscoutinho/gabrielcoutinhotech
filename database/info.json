@@ -26,27 +26,34 @@
         {
             "label": "Home",
             "description": "Home",
-            "href": "#home",
+            "href": "/#home",
             "icon": ""
     
         },
         {
             "label": "About me",
             "description": "About me",
-            "href": "#about",
+            "href": "/#about",
             "icon": ""
         },
         
         {
             "label": "Experience",
             "description": "My professional Experience",
-            "href": "#experience",
+            "href": "/#experience",
             "icon": ""
         },
         {
+            "label": "Projects",
+            "description": "Projects",
+            "href": "/#projects",
+            "icon": ""
+        },
+
+        {
             "label": "Contact me",
             "description": "Contact me",
-            "href": "#contactme",
+            "href": "/#contactme",
             "icon": ""
         }        
     ]
