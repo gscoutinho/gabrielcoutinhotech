@@ -25,10 +25,10 @@ function Home({ children }: any) {
           <div className=' lg:w-3/5 w-full relative'>
             <div className='h-full'>
 
-              <h1 className='lg:pl-3 pl-1 text-left lg:text-5xl text-4xl font-bold lg:mb-2 lg:mt-2 mt-4 bg-gradient-to-r from-sky-600 via-sky-700 to-sky-950 inline-block text-transparent bg-clip-text'>{AUTHOR_NAME}</h1>
+              <h1 className='lg:pl-3 pl-1 lg:text-left lg:text-5xl text-4xl text-center font-bold lg:mb-2 lg:mt-2 mt-4 bg-gradient-to-r from-sky-600 via-sky-700 to-sky-950 inline-block text-transparent bg-clip-text'>{AUTHOR_NAME}</h1>
               <h2 className='font-bold lg:pl-7 pl-3 text-sky-950 lg:text-2xl text-lg mb-4'>{AUTHOR_ROLE}</h2>
               <br />
-              <p className='text-justify text-lg lg:mt-2 lg:mb-4 mt-1'>{DESCRIPTION}</p>
+              <p className='text-justify text-lg lg:mt-2 lg:mb-4 mt-1 p-5'>{DESCRIPTION}</p>
             </div>
           </div>
       </Section>

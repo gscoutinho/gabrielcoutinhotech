@@ -34,6 +34,7 @@ export default function NavBar({ children }) {
                 ${activeSection === item.label ? 'text-gray-950' : ''}
                 `}
                 href={item.href}
+                
                 onClick={() => {
                   setActiveSection(item.label);
                   setTimeOfLastClick(Date.now());

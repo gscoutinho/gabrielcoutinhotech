@@ -10,7 +10,7 @@ export default function Aboutme({ children } : any) {
   return (
     <>
       <Section SEC_ID='about' initial_animation={true}>
-        <div className='w-full flex-col content-start text-center'>
+        <div className='w-full flex-col content-start text-center lg:p-10 p-3'>
           <h2>About me</h2>
           <div>
             {

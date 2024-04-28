@@ -11,7 +11,7 @@ export default function Section({ SEC_ID, children, initial_animation }) {
     const {ref} = useSectionInView(SEC_ID);
 
     return (
-        <motion.section id={SEC_ID} className='lg:my-5 lg:mx-2 lg:px-5 lg:py-10 my-3 px-1 flex justify-around content-center rounded-md justify-self-center w-full scroll-mt-48'
+        <motion.section id={SEC_ID} className='lg:my-5 lg:mx-2 lg:py-10 my-3 flex justify-around content-center rounded-md justify-self-center w-full scroll-mt-48'
             ref={ref}
             initial={{ y: initial_y, x: "0%", opacity: initial_opacity }}
             animate={{ y: 0, x: "0%", opacity: 1 }}
