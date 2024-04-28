@@ -13,7 +13,7 @@ function Projects() {
 
                 <div className='flex flex-col items-center'>
                     {
-                        projectsItems.map(item => <ProjectItem>{item}</ProjectItem>)
+                        projectsItems.map((item, idx) => <ProjectItem key={idx}>{item}</ProjectItem>)
                     }
                 </div>
 
