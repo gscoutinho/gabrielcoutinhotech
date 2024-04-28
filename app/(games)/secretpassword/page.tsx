@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 function SecretPassword() {
 
-  const [secretpassword, setSecretpassword] = useState<Array<number>>(null)
+  const [secretpassword, setSecretpassword] = useState<Array<number>>([])
   const [guess, setGuess] = useState(Array(4).fill(0))
   const [dgt, setDgt] = useState(0)
   const [result, setResult] = useState(false)
@@ -17,7 +17,7 @@ function SecretPassword() {
     <div className='flex flex-col items-center'>
       <h2>The Secret Password</h2>
       <motion.div
-        className={`${secretpassword !== null ? 'hidden' : 'block'}`}
+        className={`${secretpassword.length !== 0 ? 'hidden' : 'block'}`}
         transition={{
           y: {
             duration: 1.2,
@@ -42,7 +42,7 @@ function SecretPassword() {
       '
         >Start</button>
       </motion.div>
-      <motion.div className={`pb-5 flex flex-col items-center ${secretpassword !== null ? 'block' : 'hidden'}`}
+      <motion.div className={`pb-5 flex flex-col items-center ${secretpassword.length !== 0 ? 'block' : 'hidden'}`}
         animate={{ opacity: ["0%", "100%"] }}
         transition={{ ease: "easeOut", duration: 4 }}
       >
@@ -128,7 +128,7 @@ function SecretPassword() {
 
               if (rightPosi === 4) {
                 setResult(true)
-                setSecretpassword(null)
+                setSecretpassword([])
                 setLog([])
               }
             }}
@@ -137,7 +137,7 @@ function SecretPassword() {
         </div>
       </motion.div>
       <p className={`w-full text-center ${result ? 'block': 'hidden'}`}>Congratulations! You won The Secret Password!! Let's play again! Hit the start button!</p>
-      <p className='text-neutral-900 w-96 text-center py-5'>{secretpassword !== null ? '' : 'You are about to start The Secret Password! The rules? Well, you need to figure out by yourself.'}</p>
+      <p className='text-neutral-900 w-96 text-center py-5'>{secretpassword.length !== 0 ? '' : 'You are about to start The Secret Password! The rules? Well, you need to figure out by yourself.'}</p>
     </div>
   )
 }
