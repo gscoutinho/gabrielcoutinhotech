@@ -143,7 +143,7 @@ function SecretPassword() {
 }
 
 function getSecretPassword(arrayLength: number): Array<number> {
-  let arr = []
+  let arr: Array<number> = []
 
   for (let i = 0; i < arrayLength; i++) {
     arr[i] = getMeRandom(0, 9)
