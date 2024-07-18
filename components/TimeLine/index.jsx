@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 
 function Line() {
-    return <div className='bg-sky-800/10 w-2 h-full absolute z-[995] left-1/2' />
+    return <div className='bg-sky-800/10 w-2 h-full absolute -z-[1000] left-1/2 shadow-sm'/>
 }
 
 function End() {
@@ -92,12 +92,14 @@ function EntryBlock({ entryTitle, location, description, arrowside, date, entryT
     }
 
     return (
-        <div className={`flex ${arrowside === 'right' ? 'md:flex-row flex-col-reverse' : 'md:flex-row-reverse flex-col-reverse'} w-full justify-between items-center mt-16 mb-48 group`}
+        <div className={`flex ${arrowside === 'right' ? 'md:flex-row flex-col-reverse' : 'md:flex-row-reverse flex-col-reverse'} w-full justify-between items-center mt-16 mb-48 
+        px-6
+        group`}
 
 
         >
-            <motion.div className='bg-neutral-100 w-4/5 md:w-2/5 flex flex-col px-4 relative transition-all duration-250  shadow-lg
-            group-hover:bg-sky-400/75 group-hover:rounded-lg group-hover:shadow-4xl md:mt-0 mt-6'
+            <motion.div className='bg-neutral-100/100 w-4/5 md:w-2/5 flex flex-col px-4 relative transition-all duration-250  shadow-lg
+            group-hover:bg-sky-300/50 group-hover:rounded-lg group-hover:shadow-4xl group-hover:scale-110 md:mt-0 mt-6'
                 initial={montionBlock('card', arrowside).initial}
                 animate={montionBlock('card', arrowside).animate}
                 transition={montionBlock('card', arrowside).duration}
@@ -118,7 +120,7 @@ function EntryBlock({ entryTitle, location, description, arrowside, date, entryT
                     }
                 </div>
             </motion.div>
-            <div className='p-3 ml-2 z-[996] bg-white rounded-full border-solid border-4 border-sky-800/20 group-hover:border-sky-400 duration-250'>
+            <div className='p-3 ml-2 z-[996] bg-white rounded-full border-solid border-4 border-sky-800/20 group-hover:border-sky-300 duration-250'>
                 {
                     entryType === 'work'
                         ? <FaBriefcase size={25} color={'#075985'} />
@@ -128,7 +130,7 @@ function EntryBlock({ entryTitle, location, description, arrowside, date, entryT
                 }
 
             </div>
-            <motion.p className={`${arrowside === 'right' ? 'text-left' : 'text-right'} w-2/5 font-extralight group-hover:font-normal duration-500 group-hover:scale-110`}
+            <motion.p className={`${arrowside === 'right' ? 'text-left mr-16' : 'text-right ml-20'} md:mx-0 w-2/5 font-extralight group-hover:font-normal duration-500 group-hover:scale-110`}
                 initial={montionBlock('date', arrowside).initial}
                 animate={montionBlock('date', arrowside).animate}
                 duration={montionBlock('date', arrowside).duration}
