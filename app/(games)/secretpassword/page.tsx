@@ -80,7 +80,9 @@ function SecretPassword() {
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
-              {log.map((element, idx) => (
+              {
+              
+              (log.slice().reverse()).map((element, idx) => (
                 <tr key={idx} className="bg-white">
                   <td className="lg:px-6 px-3 py-4 whitespace-nowrap hidden lg:block">{element.index+1}</td>
                   <td className="lg:px-6 px-3 py-4 whitespace-nowrap">{element.value.map((item, idx) => <text key={idx} className='mx-1 py-1 px-2 border-b-2 rounded-lg bg-gradient-to-br from-neutral-50 via-neutral-200 to-neutral-300 text-neutral-900'>{item}</text>)}</td>

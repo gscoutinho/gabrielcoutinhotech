@@ -33,19 +33,11 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated in Control & Automation Engineering",
-    location: "Itajubá, MG - Brazil",
+    title: "SCADA Project Engineer",
+    location: "São Paulo, SP - Brazil",
     description:
-      "Graduation focused in Industrial automation and SCADA systems. My thesis was based in adaptative control theory.",
-    date: "2014 - 2018",
-    entryType: "study"
-  },
-  {
-    title: "SCADA Lead Developer",
-    location: "Campinas, SP - Brazil",
-    description:
-      "Development of High Performance SCADA systems based in Elipse Software. Applications for Utilities, mining and automotive.",
-    date: "2018 - 2019",
+      "Design, specify and manage SCADA and control solution for wind power plants.",
+    date: "2023 - now",
     entryType: "work"
   },
   {
@@ -57,21 +49,29 @@ export const experiencesData = [
     entryType: "work"
   },
   {
-    title: "SCADA Project Engineer",
-    location: "São Paulo, SP - Brazil",
+    title: "SCADA Lead Developer",
+    location: "Campinas, SP - Brazil",
     description:
-      "Design, specify and manage SCADA and control solution for wind power plants.",
-    date: "2023 - now",
+      "Development of High Performance SCADA systems based in Elipse Software. Applications for Utilities, mining and automotive.",
+    date: "2018 - 2019",
     entryType: "work"
+  },
+  {
+    title: "Graduated in Control & Automation Engineering",
+    location: "Itajubá, MG - Brazil",
+    description:
+      "Graduation focused in Industrial automation and SCADA systems. My thesis was based in adaptative control theory.",
+    date: "2014 - 2018",
+    entryType: "study"
   }
 ] as const;
 
 export const projectsItems = [
 {
-  title:"The Secret Password",
-  description: "The Secret Password is a single player game where you need to find out what is the Secret Password. Check out and try to discover this puzzle.",
-  skills: ["HTML", "CSS", "Javascript", "Tailwind", "Nextjs"],
-  image: "/public/the_secret_password.png",
+  title:"Arena!",
+  shortdescription: "Dive into the world of challenging and captivating puzzle games at Arena.",
+  description: "Dive into the world of challenging and captivating puzzle games at Arena. Whether you're a casual gamer or a puzzle enthusiast, Arena offers a diverse collection of games that will test your wits and keep you entertained for hours.",
+  image: "/arena_games.png",
   href:"/secretpassword"
 },
 // {

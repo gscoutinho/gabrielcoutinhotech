@@ -15,12 +15,12 @@ function ContactMe({ children }: any) {
     return (
         <>
             <Section SEC_ID='contactme' initial_animation={true}>
-                <div className=' w-full flex flex-col content-start text-center'>
+                <div className=' w-full flex flex-col content-start text-center px-4 md:px-32'>
                     <h2>Contact me</h2>
                     <div className='flex flex-col'>
-                        <h3 className='mb-5'>Send me a message!</h3>
+                        <h3 className='mb-2'>Send me a message!</h3>
 
-                        <form className='my-3 flex flex-col items-center p-6'
+                        <form className='my-3 flex flex-col items-center py-6 px-4'
 
                             action={async (formData) => {
                                 const { data, error } = await sendEmail(formData)
