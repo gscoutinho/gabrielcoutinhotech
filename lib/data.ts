@@ -72,7 +72,8 @@ export const projectsItems = [
   shortdescription: "Dive into the world of challenging and captivating puzzle games at Arena.",
   description: "Dive into the world of challenging and captivating puzzle games at Arena. Whether you're a casual gamer or a puzzle enthusiast, Arena offers a diverse collection of games that will test your wits and keep you entertained for hours.",
   image: "/arena_games.png",
-  href:"/secretpassword"
+  href: "/arena"
+  // href:"/secretpassword"
 },
 // {
 //   title:"The Secret Password",
@@ -88,4 +89,14 @@ export const projectsItems = [
 //   image: "",
 //   href:"/secretpassword"
 // },
+] as const;
+
+export const arenaGames = [
+  {
+    title: 'Secret Password',
+    shortdescription:'I challenge you to THE SECRET PASSWORD!',
+    description: 'I challenge you to find out the SECRET PASSWORD! The Secret Password is a single player game where you need to find out what is the Secret Password.',
+    image: '/secret_pass.png',
+    href: '/arena/secretpassword'
+  }
 ] as const;
