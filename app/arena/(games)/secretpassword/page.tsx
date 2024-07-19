@@ -14,7 +14,7 @@ function SecretPassword() {
 
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center m-4 p-4 bg-neutral-100 shadow-lg'>
       <h2>The Secret Password</h2>
       <motion.div
         className={`${secretpassword.length !== 0 ? 'hidden' : 'block'}`}
@@ -138,8 +138,8 @@ function SecretPassword() {
 
         </div>
       </motion.div>
-      <p className={`w-full text-center ${result ? 'block': 'hidden'}`}>Congratulations! You won The Secret Password!! Let's play again! Hit the start button!</p>
-      <p className='text-neutral-900 w-96 text-center py-5'>{secretpassword.length !== 0 ? '' : 'You are about to start The Secret Password! The rules? Well, you need to figure out by yourself.'}</p>
+      <p className={`mt-2 w-full text-center ${result ? 'block': 'hidden'}`}>Congratulations! You won The Secret Password!! Let's play again! Hit the start button!</p>
+      <p className='text-neutral-900 mt-2 w-96 text-center py-5'>{secretpassword.length !== 0 ? '' : 'You are about to start The Secret Password! The rules? Well, you need to figure out by yourself.'}</p>
     </div>
   )
 }

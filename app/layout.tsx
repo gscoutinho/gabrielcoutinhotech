@@ -22,9 +22,8 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <body className={`p-2 flex flex-col items-center ${inter.className} bg-neutral-100`}>
         <ActiveSectionContextProvider>
-          <NavBar>{db_info.NAV_ITENS}</NavBar>
+        <NavBar>{db_info.NAV_ITENS}</NavBar>
           {children}
-
           <Toaster 
           position="bottom-right"
           reverseOrder={false}
